@@ -1,7 +1,7 @@
 
 ### 栅栏状的图形
 
-![img](file:///Users/JP20186/Documents/shader/strip.png)
+![img](https://github.com/chenxiao07/pixel-shader-collection/blob/master/shader/strip.png)
 
 
 glsl代码
@@ -23,7 +23,7 @@ void main() {
 
 ### 棋盘格
 
-![img](file:///Users/JP20186/Documents/shader/checkboard.png)
+![img](https://github.com/chenxiao07/pixel-shader-collection/blob/master/shader/checkboard.png)
 
 
 glsl代码
