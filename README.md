@@ -1,6 +1,7 @@
+
 ### 纯颜色shader
 
-![img](file:///Users/JP20186/Documents/shader/red.png)
+![img](https://github.com/chenxiao07/pixel-shader-collection/blob/master/shader/red.png)
 
 
 glsl代码
@@ -18,7 +19,7 @@ void main() {
 
 ### 带渐变的shader
 
-![img](file:///Users/JP20186/Documents/shader/gradient.png)
+![img](https://github.com/chenxiao07/pixel-shader-collection/blob/master/shader/gradient.png)
 
 
 glsl代码
@@ -34,7 +35,7 @@ void main() {
 
 ### 两个方向渐变的shader
 
-![img](file:///Users/JP20186/Documents/shader/gradient2.png)
+![img](https://github.com/chenxiao07/pixel-shader-collection/blob/master/shader/gradient2.png)
 
 
 glsl代码
@@ -50,7 +51,7 @@ void main() {
 
 ### 径向渐变的shader
 
-![img](file:///Users/JP20186/Documents/shader/gradient3.png)
+![img](https://github.com/chenxiao07/pixel-shader-collection/blob/master/shader/gradient3.png)
 
 glsl代码
 
@@ -66,7 +67,7 @@ void main() {
 
 ### 径向渐变的shader
 
-![img](file:///Users/JP20186/Documents/shader/gradient4.png)
+![img](https://github.com/chenxiao07/pixel-shader-collection/blob/master/shader/gradient4.png)
 
 glsl代码
 
