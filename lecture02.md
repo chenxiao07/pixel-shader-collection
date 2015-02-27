@@ -45,4 +45,27 @@ void main() {
 }
 ```
 
+### 白噪音
+
+![img](https://github.com/chenxiao07/pixel-shader-collection/blob/master/shader/noise1.png)
+
+
+glsl代码
+
+```
+float rand(vec2 co){
+    return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
+}
+
+void main() {
+  vec2 p = position - vec2(0.5, 0.5);
+  
+  float color = rand(p);
+  
+  gl_FragColor.rgb = vec3(color);
+  gl_FragColor.a = 1.;
+}
+```
+
+
 
