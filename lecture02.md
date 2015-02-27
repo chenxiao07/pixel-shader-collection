@@ -67,5 +67,45 @@ void main() {
 }
 ```
 
+### 正弦曲线
 
+![img](https://github.com/chenxiao07/pixel-shader-collection/blob/master/shader/sin1.png)
+
+
+glsl代码
+
+```
+void main() {
+  vec2 p = position - vec2(0.5, 0.5);
+  p = p*8.0;
+  
+  if (abs(sin(p.x) - p.y) < 0.05) {
+    gl_FragColor.rgb = vec3(1.0, 0.0, 0.0);
+  } else {
+    gl_FragColor.rgb = vec3(0.0, 0.0, 0.0);
+  }
+  gl_FragColor.a = 1.0;
+}
+```
+
+
+### 正弦曲线AA
+
+![img](https://github.com/chenxiao07/pixel-shader-collection/blob/master/shader/sin2.png)
+
+
+glsl代码
+
+```
+void main() {
+  vec2 p = position - vec2(0.5, 0.5);
+  p = p*8.0;
+  
+  float value = abs(sin(p.x) - p.y);
+  
+  gl_FragColor.rgb = vec3(smoothstep(0.05, 0.0, value), 0.0, 0.0);
+
+  gl_FragColor.a = 1.0;
+}
+```
 
