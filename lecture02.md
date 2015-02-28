@@ -163,4 +163,46 @@ void main( void ) {
 ```
 
 
+### 阿基米德螺旋线
+
+![img](https://github.com/chenxiao07/pixel-shader-collection/blob/master/shader/spiral.png)
+
+
+glsl代码
+
+```
+float TAU = 6.3;
+float rd = 10.0;
+
+void main() {
+  vec2 p = position - vec2(0.5, 0.5);
+  
+  float radius = length(p);
+  float angle = atan(p.y, p.x) / TAU;
+  if (angle < 0.0) angle = angle + 1.0;
+  
+  float temp = smoothstep(0.0, 0.01 * rd, abs(fract(radius*rd) - angle));
+  
+  gl_FragColor.rgb = vec3(temp);
+  gl_FragColor.a = 1.0;
+}
+```
+
+### 螺旋线AA
+
+![img](https://github.com/chenxiao07/pixel-shader-collection/blob/master/shader/spiral2.png)
+
+
+glsl代码
+
+```
+void main( void ) {
+  vec2 p = position - vec2(0.5);
+
+  float radius = length(p);
+  float angle = atan(p.y,p.x);
+  gl_FragColor.rgb = vec3(sin(angle - 90.0*radius) + 0.5);
+  gl_FragColor.a = 1.0;
+}
+```
 
