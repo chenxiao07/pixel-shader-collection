@@ -206,3 +206,21 @@ void main( void ) {
 }
 ```
 
+
+### 扭曲
+
+![img](https://github.com/chenxiao07/pixel-shader-collection/blob/master/shader/distortion01.png)
+
+
+glsl代码
+
+```
+void main( void ) {
+  vec2 p = position + vec2(0.5);
+  
+  float color = 0.1 + cos(p.x*20.0*(p.y + cos(p.x*2.0)))*5.0 ;
+
+  gl_FragColor = vec4( vec3( color, color * 0.15, sin( color ) * 0.75 ), 1.0 );
+}
+```
+
