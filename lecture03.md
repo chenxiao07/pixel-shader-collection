@@ -5,7 +5,7 @@
 
 glsl代码
 
-```
+```glsl
 
 // raymarching 最大迭代次数
 #define ITE_MAX      45
@@ -56,7 +56,7 @@ void main( void ) {
 
 glsl代码
 
-```
+```glsl
 
 #define ITE_MAX      45
 #define DIST_MIN     0.01
@@ -97,7 +97,7 @@ void main( void ) {
 
 glsl代码
 
-```
+```glsl
 
 #define ITE_MAX      45
 #define DIST_MIN     0.01
@@ -140,7 +140,7 @@ void main( void ) {
 
 glsl代码
 
-```
+```glsl
 
 #define ITE_MAX      45
 #define DIST_MIN     0.01
@@ -187,7 +187,7 @@ void main( void ) {
   }
 }
 
-```
+```glsl
 
 
 ### 基本光照
@@ -262,7 +262,7 @@ void main( void ) {
 
 glsl代码
 
-```
+```glsl
 
 #define ITE_MAX      80
 #define DIST_MIN     0.01
@@ -331,7 +331,7 @@ void main( void ) {
 
 glsl代码
 
-```
+```glsl
 
 precision mediump float;
 

@@ -5,7 +5,7 @@
 
 glsl代码
 
-```
+```glsl
 
 precision mediump float;
 
@@ -93,7 +93,7 @@ void main( void ) {
 
 glsl代码
 
-```
+```glsl
 
 precision mediump float;
 
@@ -167,7 +167,7 @@ void main( void ) {
 
 glsl代码
 
-```
+```glsl
 
 precision mediump float;
 
@@ -259,7 +259,7 @@ void main( void ) {
 
 glsl代码
 
-```
+```glsl
 
 precision mediump float;
 

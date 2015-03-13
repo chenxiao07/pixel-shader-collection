@@ -6,7 +6,7 @@
 
 glsl代码
 
-```
+```glsl
 void main() {
   gl_FragColor.r = 1.0;
   gl_FragColor.g = 0.0;
@@ -24,7 +24,7 @@ void main() {
 
 glsl代码
 
-```
+```glsl
 void main() {
   gl_FragColor.r = position.x;
   gl_FragColor.g = 0.0;
@@ -40,7 +40,7 @@ void main() {
 
 glsl代码
 
-```
+```glsl
 void main() {
   gl_FragColor.r = position.x;
   gl_FragColor.g = position.y;
@@ -55,7 +55,7 @@ void main() {
 
 glsl代码
 
-```
+```glsl
 void main() {
   float r = length(position - vec2(0.5, 0.5));
   gl_FragColor.r = r;
@@ -71,7 +71,7 @@ void main() {
 
 glsl代码
 
-```
+```glsl
 void main() {
   vec2 p = position - vec2(0.5, 0.5);
   

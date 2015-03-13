@@ -6,7 +6,7 @@
 
 glsl代码
 
-```
+```glsl
 float stripes(vec2 p, float steps) {
   return fract(p.x*steps);
 }
@@ -28,7 +28,7 @@ void main() {
 
 glsl代码
 
-```
+```glsl
 float checkboard(vec2 p, float steps) {
   vec2 temp = fract(p * steps);
   temp = step(temp, vec2(0.5, 0.5));
@@ -52,7 +52,7 @@ void main() {
 
 glsl代码
 
-```
+```glsl
 float rand(vec2 co){
     return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
 }
@@ -74,7 +74,7 @@ void main() {
 
 glsl代码
 
-```
+```glsl
 void main() {
   vec2 p = position - vec2(0.5, 0.5);
   p = p*8.0;
@@ -96,7 +96,7 @@ void main() {
 
 glsl代码
 
-```
+```glsl
 void main() {
   vec2 p = position - vec2(0.5, 0.5);
   p = p*8.0;
@@ -117,7 +117,7 @@ void main() {
 
 glsl代码
 
-```
+```glsl
 float hex(vec2 p) {
   p.x *= 0.57735*2.0;
   p.y += mod(floor(p.x), 2.0)*0.5;
@@ -139,7 +139,7 @@ void main(void) {
 
 glsl代码
 
-```
+```glsl
 void main( void ) {
   vec2 c = position*2.0 - vec2(1.0);
   vec2 z = vec2(0);
@@ -170,7 +170,7 @@ void main( void ) {
 
 glsl代码
 
-```
+```glsl
 float TAU = 6.3;
 float rd = 10.0;
 
@@ -195,7 +195,7 @@ void main() {
 
 glsl代码
 
-```
+```glsl
 void main( void ) {
   vec2 p = position - vec2(0.5);
 
@@ -214,7 +214,7 @@ void main( void ) {
 
 glsl代码
 
-```
+```glsl
 void main( void ) {
   vec2 p = position + vec2(0.5);
   
