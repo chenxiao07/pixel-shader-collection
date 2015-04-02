@@ -197,7 +197,7 @@ void main( void ) {
 
 glsl代码
 
-```
+```glsl
 
 #define ITE_MAX      45
 #define DIST_MIN     0.01
