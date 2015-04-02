@@ -188,7 +188,7 @@ void main( void ) {
   }
 }
 
-```glsl
+```
 
 
 ### 基本光照
